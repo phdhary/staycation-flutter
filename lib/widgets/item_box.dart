@@ -13,12 +13,57 @@ class ItemBox extends StatelessWidget {
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    double width = 263;
+    double height = 249;
     return Container(
-      width: 263,
-      height: 249,
+      width: width,
+      height: height,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(),
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: Stack(
+              children: [
+                Container(
+                  child: Image.asset(
+                    image,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.topRight,
+                  child: Container(
+                    width: width * 0.7,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: pink,
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(15),
+                        topRight: Radius.circular(15),
+                      ),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Popular',
+                          style: whiteFont.copyWith(fontSize: 16),
+                        ),
+                        Text(
+                          ' Choice',
+                          style: whiteFont.copyWith(
+                              fontSize: 16, fontWeight: FontWeight.w300),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
           SizedBox(height: 16),
           Text(
             title,
