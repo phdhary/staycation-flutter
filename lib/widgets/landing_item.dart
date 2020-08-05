@@ -19,6 +19,7 @@ class LandingItem extends StatelessWidget {
             width: 32,
             child: Image.asset(image),
           ),
+          SizedBox(height: 10),
           Row(
             children: [
               Text(
