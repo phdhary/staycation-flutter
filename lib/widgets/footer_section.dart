@@ -61,7 +61,7 @@ class FooterSection extends StatelessWidget {
           SizedBox(height: 50),
           Center(
             child: Text(
-              'Copyright 2019 • All rights reserved • Staycation',
+              'Copyright 2021 • All rights reserved • Staycation',
               style: grayFont.copyWith(
                 fontSize: 16,
                 fontWeight: FontWeight.w300,

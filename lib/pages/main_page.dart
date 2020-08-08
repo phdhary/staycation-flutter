@@ -1,10 +1,14 @@
 part of 'pages.dart';
 
-class MainPage extends StatelessWidget {
+class MainPage extends StatefulWidget {
+  @override
+  _MainPageState createState() => _MainPageState();
+}
+
+class _MainPageState extends State<MainPage> {
+  FakeApi fakeApi = FakeApi();
   @override
   Widget build(BuildContext context) {
-    FakeApi fakeApi = FakeApi();
-
     return Scaffold(
       body: Stack(
         children: [
@@ -38,7 +42,11 @@ class MainPage extends StatelessWidget {
                   },
                 ),
                 SizedBox(height: 100),
-                TestimonySection(),
+                TestimonySection(
+                  getItem: () async {
+                    return await fakeApi.getTestimonyItem('Jony Sinuse');
+                  },
+                ),
                 SizedBox(height: 100),
                 FooterSection(),
               ],

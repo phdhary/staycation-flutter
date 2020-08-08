@@ -99,4 +99,28 @@ class FakeApi extends Api {
 
     return items;
   }
+
+  @override
+  Future<Testimony> getTestimonyItem(String reviewer) async {
+    List<Testimony> items = [
+      Testimony(
+        title: 'Happy Family',
+        subtitle:
+            'What a great trip with my family and\nI should try again next time soon ...',
+        image: 'assets/images/t_1.png',
+        reviewer: 'Jony Sinuse',
+        rating: 5,
+      ),
+      Testimony(
+        title: 'Happy Family',
+        subtitle:
+            'As a wife I can pick a great trip with\nmy own lovely family ... thank you!',
+        image: 'assets/images/t_2.png',
+        reviewer: 'Jennesa Soklo',
+        rating: 5,
+      ),
+    ];
+    await Future.delayed(Duration(seconds: loadTime));
+    return items.singleWhere((e) => e.reviewer == reviewer);
+  }
 }
