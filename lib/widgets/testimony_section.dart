@@ -82,7 +82,7 @@ class TestimonySection extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
                 Text(
-                  'Jony Sinus',
+                  'Jony Sinus, CEO of Mosooct',
                   style: grayFont.copyWith(
                     fontSize: 18,
                     fontWeight: FontWeight.w300,

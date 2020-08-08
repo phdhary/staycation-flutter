@@ -13,3 +13,6 @@ part 'most_picked_section_item.dart';
 part 'item_section.dart';
 part 'item_box.dart';
 part 'testimony_section.dart';
+part 'footer_section.dart';
+part 'footer_section_item.dart';
+part 'logo.dart';
