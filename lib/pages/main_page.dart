@@ -36,6 +36,8 @@ class MainPage extends StatelessWidget {
               },
             ),
             SizedBox(height: 100),
+            TestimonySection(),
+            SizedBox(height: 100),
           ],
         ),
       ),

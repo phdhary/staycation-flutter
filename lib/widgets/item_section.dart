@@ -30,7 +30,7 @@ class _ItemSectionState extends State<ItemSection> {
           ),
           SizedBox(height: 20),
           Container(
-            height: 305,
+            height: 252,
             child: FutureBuilder(
               future: loadData(),
               builder: (_, snapshot) {
