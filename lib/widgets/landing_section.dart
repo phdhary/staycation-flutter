@@ -1,6 +1,6 @@
 part of 'widgets.dart';
 
-class Landing extends StatelessWidget {
+class LandingSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -28,8 +28,7 @@ class Landing extends StatelessWidget {
                 Container(
                   width: 210,
                   height: 50,
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(4)),
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(4)),
                   child: RaisedButton(
                     color: blueIndigo,
                     child: Text(
@@ -42,19 +41,19 @@ class Landing extends StatelessWidget {
                 SizedBox(height: 82),
                 Row(
                   children: [
-                    LandingItem(
+                    LandingSectionItem(
                       image: 'assets/images/ic_traveler.png',
                       amount: '80,409',
                       title: 'travelers',
                     ),
                     SizedBox(width: 50),
-                    LandingItem(
+                    LandingSectionItem(
                       image: 'assets/images/ic_treasure.png',
                       amount: '862',
                       title: 'treasure',
                     ),
                     SizedBox(width: 50),
-                    LandingItem(
+                    LandingSectionItem(
                       image: 'assets/images/ic_cities.png',
                       amount: '1,492',
                       title: 'cities',

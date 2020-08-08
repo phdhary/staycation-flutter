@@ -1,11 +1,11 @@
 part of 'widgets.dart';
 
-class LandingItem extends StatelessWidget {
+class LandingSectionItem extends StatelessWidget {
   final String image;
   final String amount;
   final String title;
 
-  const LandingItem(
+  const LandingSectionItem(
       {Key key, @required this.image, this.amount = "", this.title = ""})
       : super(key: key);
   @override
@@ -29,8 +29,7 @@ class LandingItem extends StatelessWidget {
               Text(' '),
               Text(
                 title,
-                style: grayFont.copyWith(
-                    fontSize: 16, fontWeight: FontWeight.w300),
+                style: grayFont.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
               )
             ],
           ),

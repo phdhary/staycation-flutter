@@ -33,42 +33,43 @@ class ItemBox extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
-                Align(
-                  alignment: Alignment.topRight,
-                  child: Container(
-                    width: width * 0.7,
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: pink,
-                      borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(15),
-                        topRight: Radius.circular(15),
-                      ),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'Popular',
-                          style: whiteFont.copyWith(fontSize: 16),
+                (isPopular)
+                    ? Align(
+                        alignment: Alignment.topRight,
+                        child: Container(
+                          width: width * 0.7,
+                          height: 40,
+                          decoration: BoxDecoration(
+                            color: pink,
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(15),
+                              topRight: Radius.circular(15),
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'Popular',
+                                style: whiteFont.copyWith(fontSize: 16),
+                              ),
+                              Text(
+                                ' Choice',
+                                style: whiteFont.copyWith(
+                                    fontSize: 16, fontWeight: FontWeight.w300),
+                              ),
+                            ],
+                          ),
                         ),
-                        Text(
-                          ' Choice',
-                          style: whiteFont.copyWith(
-                              fontSize: 16, fontWeight: FontWeight.w300),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                      )
+                    : SizedBox.shrink(),
               ],
             ),
           ),
           SizedBox(height: 16),
           Text(
             title,
-            style:
-                blackFont.copyWith(fontSize: 20, fontWeight: FontWeight.w400),
+            style: blackFont.copyWith(fontSize: 20, fontWeight: FontWeight.w400),
           ),
           Text(
             subtitle,

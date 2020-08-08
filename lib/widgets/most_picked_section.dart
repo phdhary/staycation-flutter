@@ -1,6 +1,6 @@
 part of 'widgets.dart';
 
-class MostPicked extends StatelessWidget {
+class MostPickedSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -18,7 +18,7 @@ class MostPicked extends StatelessWidget {
           Container(
             child: Row(
               children: [
-                MostPickedItem(
+                MostPickedSectionItem(
                   image: 'assets/images/mp_1.png',
                   width: 361,
                   height: 460,
@@ -29,7 +29,7 @@ class MostPicked extends StatelessWidget {
                 SizedBox(width: 30),
                 Column(
                   children: [
-                    MostPickedItem(
+                    MostPickedSectionItem(
                       image: 'assets/images/mp_2.png',
                       width: 361,
                       height: 215,
@@ -38,7 +38,7 @@ class MostPicked extends StatelessWidget {
                       subtitle: 'Bandung, Indonesia',
                     ),
                     SizedBox(height: 30),
-                    MostPickedItem(
+                    MostPickedSectionItem(
                       image: 'assets/images/mp_3.png',
                       width: 361,
                       height: 215,
@@ -51,7 +51,7 @@ class MostPicked extends StatelessWidget {
                 SizedBox(width: 30),
                 Column(
                   children: [
-                    MostPickedItem(
+                    MostPickedSectionItem(
                       image: 'assets/images/mp_4.png',
                       width: 361,
                       height: 215,
@@ -60,7 +60,7 @@ class MostPicked extends StatelessWidget {
                       subtitle: 'Malang, Indonesia',
                     ),
                     SizedBox(height: 30),
-                    MostPickedItem(
+                    MostPickedSectionItem(
                       image: 'assets/images/mp_5.png',
                       width: 361,
                       height: 215,

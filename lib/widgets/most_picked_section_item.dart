@@ -1,11 +1,11 @@
 part of 'widgets.dart';
 
-class MostPickedItem extends StatelessWidget {
+class MostPickedSectionItem extends StatelessWidget {
   final String image, price, title, subtitle;
   final double width, height;
   final void Function() onTap;
 
-  const MostPickedItem({
+  const MostPickedSectionItem({
     Key key,
     @required this.image,
     @required this.width,
@@ -86,8 +86,8 @@ class MostPickedItem extends StatelessWidget {
                     ),
                     Text(
                       ' per night',
-                      style: whiteFont.copyWith(
-                          fontSize: 16, fontWeight: FontWeight.w300),
+                      style:
+                          whiteFont.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                     ),
                   ],
                 ),
