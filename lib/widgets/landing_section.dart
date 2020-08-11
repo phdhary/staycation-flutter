@@ -43,19 +43,19 @@ class LandingSection extends StatelessWidget {
                   children: [
                     LandingSectionItem(
                       image: 'assets/images/ic_traveler.png',
-                      amount: '80,409',
+                      amount: 80409,
                       title: 'travelers',
                     ),
                     SizedBox(width: 50),
                     LandingSectionItem(
                       image: 'assets/images/ic_treasure.png',
-                      amount: '862',
+                      amount: 862,
                       title: 'treasure',
                     ),
                     SizedBox(width: 50),
                     LandingSectionItem(
                       image: 'assets/images/ic_cities.png',
-                      amount: '1,492',
+                      amount: 1492,
                       title: 'cities',
                     ),
                   ],

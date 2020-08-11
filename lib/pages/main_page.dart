@@ -23,29 +23,21 @@ class _MainPageState extends State<MainPage> {
                 SizedBox(height: 70),
                 ItemSection(
                   sectionTitle: 'Houses with beauty backyard',
-                  getItems: () async {
-                    return await fakeApi.getBeautyItems();
-                  },
+                  getItems: () async => await fakeApi.getBeautyItems(),
                 ),
                 SizedBox(height: 70),
                 ItemSection(
                   sectionTitle: 'Hotels with large living room',
-                  getItems: () async {
-                    return await fakeApi.getHotelItems();
-                  },
+                  getItems: () async => await fakeApi.getHotelItems(),
                 ),
                 SizedBox(height: 70),
                 ItemSection(
                   sectionTitle: 'Apartments with kitchen set',
-                  getItems: () async {
-                    return await fakeApi.getApartItems();
-                  },
+                  getItems: () async => await fakeApi.getApartItems(),
                 ),
                 SizedBox(height: 100),
                 TestimonySection(
-                  getItem: () async {
-                    return await fakeApi.getTestimonyItem('Jony Sinuse');
-                  },
+                  getItem: () async => await fakeApi.getTestimonyItem('Jony Sinuse'),
                 ),
                 SizedBox(height: 100),
                 FooterSection(),

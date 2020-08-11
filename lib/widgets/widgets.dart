@@ -16,3 +16,8 @@ part 'testimony_section.dart';
 part 'footer_section.dart';
 part 'footer_section_item.dart';
 part 'logo.dart';
+part 'path_crumb.dart';
+part 'detail_page_title.dart';
+part 'detail_page_pictures.dart';
+part 'detail_page_description.dart';
+part 'detail_page_features.dart';

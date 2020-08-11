@@ -123,4 +123,37 @@ class FakeApi extends Api {
     await Future.delayed(Duration(seconds: loadTime));
     return items.singleWhere((e) => e.reviewer == reviewer);
   }
+
+  @override
+  Future<List<Item>> getTreasureItems() async {
+    List<Item> items = [
+      Item(
+        title: 'Green Lake',
+        subtitle: 'Nature',
+        isPopular: false,
+        image: 'assets/images/tr_1.png',
+      ),
+      Item(
+        title: 'Dog Clubs',
+        subtitle: 'Toy',
+        isPopular: false,
+        image: 'assets/images/tr_2.png',
+      ),
+      Item(
+        title: 'Wine Lab',
+        subtitle: 'Shopping',
+        isPopular: true,
+        image: 'assets/images/tr_3.png',
+      ),
+      Item(
+        title: 'Snorkeling',
+        subtitle: 'Beach',
+        isPopular: false,
+        image: 'assets/images/tr_4.png',
+      ),
+    ];
+    await Future.delayed(Duration(seconds: loadTime));
+
+    return items;
+  }
 }

@@ -2,11 +2,10 @@ part of 'widgets.dart';
 
 class LandingSectionItem extends StatelessWidget {
   final String image;
-  final String amount;
+  final double amount;
   final String title;
 
-  const LandingSectionItem(
-      {Key key, @required this.image, this.amount = "", this.title = ""})
+  const LandingSectionItem({Key key, @required this.image, this.amount, this.title = ""})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,7 @@ class LandingSectionItem extends StatelessWidget {
           Row(
             children: [
               Text(
-                amount,
+                amount.toString(),
                 style: bluindarkFont.copyWith(fontSize: 16),
               ),
               Text(' '),
