@@ -28,9 +28,9 @@ class LandingSection extends StatelessWidget {
                 Container(
                   width: 210,
                   height: 50,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(4)),
                   child: RaisedButton(
                     color: blueIndigo,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                     child: Text(
                       'Show Me Now',
                       style: whiteFont.copyWith(fontSize: 18),

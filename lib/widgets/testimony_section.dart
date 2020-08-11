@@ -117,8 +117,9 @@ class _TestimonySectionState extends State<TestimonySection> {
                       Container(
                         width: 210,
                         height: 50,
-                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(4)),
                         child: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(4)),
                           color: blueIndigo,
                           child: Text(
                             'Read Their Story',

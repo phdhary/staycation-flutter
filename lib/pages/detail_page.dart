@@ -14,6 +14,7 @@ class _DetailPageState extends State<DetailPage> {
       body: Stack(
         children: [
           SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
             child: Column(
               children: [
                 SizedBox(height: 132),
