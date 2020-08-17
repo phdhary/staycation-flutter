@@ -189,13 +189,6 @@ class DetailPageDescription extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'You will pay ',
-                      style: grayFont.copyWith(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w300,
-                      ),
-                    ),
-                    Text(
                       '480 USD ',
                       style: blackFont.copyWith(
                         fontSize: 16,
